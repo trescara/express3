@@ -6,11 +6,6 @@ const port = process.env.PORT || 3000;
 const students = require("./students.json")
 app.use(morgan('tiny'));
 
-// fetch("./students.json")
-//  .then(response => response.json())
-//  .then(json => console.log(json));
-
-
 
 function findById(data, id) {
   for (let i = 0; i < data.length; i++) {
