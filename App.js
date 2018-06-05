@@ -20,10 +20,10 @@ function findById(data, id) {
 app.use(cors());
 
 
-app.listen(port, () => {
-  app.get("/", function (request, response) {
-    response.json({ data: students });
-  });
+// app.listen(port, () => {
+//   app.get("/", function (request, response) {
+//     response.json({ data: students });
+//   });
 
   app.get("/:id", function (request, response) {
     var record = findById(students, request.params.id);
